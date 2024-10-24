@@ -1,4 +1,4 @@
-function Nav(propsObj: {counterNum: number}) {
+function Nav() {
     return (
       <nav>
         <a href="#">Home</a>

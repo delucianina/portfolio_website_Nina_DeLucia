@@ -1,12 +1,12 @@
 import Nav from './Nav';
 
-function Header(propsObj: { count: number; color: string; userName: string }) {
+function Header()) {
     return (
       <header>
-        <h3 style={{backgroundColor: propsObj.color}}>{propsObj.userName}</h3>
+        
+        <h3>Nina DeLucia</h3>
   
-        <p>Header Count: {propsObj.count}</p>
-        <Nav counterNum={propsObj.count} />
+        <Nav />
       </header>
     )
   }
