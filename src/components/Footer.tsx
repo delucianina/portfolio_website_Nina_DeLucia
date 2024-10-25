@@ -3,7 +3,7 @@ function Footer() {
 
     return(
         <footer>
-            <p>Copyright &copy {date.getFullYear()}</p>
+            <p>Copyright {date.getFullYear()}</p>
             <p>Designed and Developed by Nina DeLucia</p>
         </footer>
     )

@@ -21,8 +21,7 @@ function Hero() {
         <section className="hero">
             <div className="hero-text">
                 <h4>Software <br></br>Developer</h4>
-                <p>TAGLINE HERE!</p>
-                <p>{quote}</p>
+                <p className="text-center">{quote}</p>
             </div>
             <div className="image"></div>
         </section>
