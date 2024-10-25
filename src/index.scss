@@ -1,0 +1,179 @@
+// ALL!
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #0d1013;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+//GLOBAL CLASSES
+
+.text-center {
+    text-align: center;
+}
+
+
+
+// HEADER 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #59718a7b; 
+    color: #fff;
+    padding: 8px 5%;
+    div.logo {
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        img {
+            width: 100px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+
+        h3 {
+            font-weight: bold;
+        }
+    }
+    nav {
+        a {
+            color: #fff;
+            text-decoration: none;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+// Hero Section 
+section.hero {
+    display: flex;
+    div.image {
+        background-image: url('/images/squirrel_6.jpg');
+        background-size: cover;
+        background-position: top;
+        min-height: 350px;
+        min-width: 350px;
+        border-radius: 50%;
+    }
+
+    div.hero-text {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 50%;
+        h4 {
+            font-size: 2.5rem;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        p {
+            font-weight: 300;
+        }
+    }
+}
+
+//WORK SECTION
+main {
+    padding: 15px 5%;
+    color: #fff;
+    flex: 1; 
+
+    h3 {
+        margin: 50px auto 30px;
+        border-bottom: 1px solid #444;
+        padding-bottom: 10px;
+    }
+
+    section.work-output {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        article {
+            padding: 75px 15px 15px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 3px;
+            h5 {
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+
+// CONTACT SECTION 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    
+    > * {
+        padding: 7px 12px;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 3px;
+    }
+    
+    h3 {
+        margin: 50px auto 30px;
+        color: #fff;
+        border-bottom: 1px solid #444;
+        padding-bottom: 10px;
+    }
+
+    input, textarea {
+        outline: none;
+        background: #333;
+        color: #fff;
+        &::placeholder {
+            color: #aaa;
+        }
+    }
+
+    button {
+        background: #587581;
+        color: #fff;
+        border-radius: 3px;
+        &:hover {
+            background: #2a465c;
+        }
+    }
+}
+
+
+//FOOTER  
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 5%;
+    background: #59718a49;
+    color: #ffffffb4;
+}
