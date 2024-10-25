@@ -63,3 +63,5 @@ function ContactForm() {
 
 export default ContactForm;
 
+console.log(window.location);
+

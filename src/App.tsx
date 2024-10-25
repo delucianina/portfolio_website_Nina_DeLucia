@@ -1,18 +1,27 @@
 // import { useState } from 'react';
-import Hero from './components/Hero';
 import Header from './components/Header';
-import Work from './components/Work';
-import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+
+import { Routes, Route } from 'react-router-dom';
+
+import Landing from './pages/Landing';
+import ContactForm from './pages/ContactForm';
 
 function App() {
 
   return (
     <>
       <Header />
-      <Hero />
-      <Work />
-      <ContactForm />
+
+      <main>
+        <Routes>
+
+          <Route path="/" element={<Landing />} />
+          <Route path="/contact" element={<ContactForm />} />
+
+        </Routes>
+      </main>
+
       <Footer />
     </>
   )

@@ -4,7 +4,7 @@ function Work() {
     // const fruits = [<p>apple</p>, <p>apple</p>, <p>apple</p>, <p>apple</p>];
 
     return (
-        <main>
+        <>
             <h3 className="text-center">My Work</h3>
 
             <section id = "work" className="work-output">
@@ -15,7 +15,7 @@ function Work() {
                 </article>
                 ))}
             </section>
-        </main>
+        </>
     )
 }
 

@@ -6,7 +6,7 @@
     font-family: sans-serif;
 }
 
-html, body {
+html, body, #root {
     height: 100%;
 }
 
@@ -56,7 +56,7 @@ header {
             &:not(:last-child) {
                 margin-right: 30px;
             }
-            &:hover {
+            &:hover, &.active {
                 text-decoration: underline;
             }
         }
@@ -68,6 +68,7 @@ header {
 // Hero Section 
 section.hero {
     display: flex;
+    margin-bottom: 20px;
     div.image {
         background-image: url('/images/squirrel_6.jpg');
         background-size: cover;
@@ -97,7 +98,7 @@ section.hero {
 
 //WORK SECTION
 main {
-    padding: 15px 5%;
+    padding: 15px 0;
     color: #fff;
     flex: 1; 
 
@@ -111,7 +112,7 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-
+        padding: 0, 3%;
         article {
             padding: 75px 15px 15px;
             background-size: cover;
@@ -133,7 +134,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 400px;
-    margin: 0 auto 65px;
+    margin: 35px auto 65px;
     
     > * {
         padding: 7px 12px;
