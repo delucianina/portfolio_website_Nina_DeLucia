@@ -3,8 +3,8 @@ function Footer() {
 
     return(
         <footer>
-            <p>Copyright {date.getFullYear()}</p>
-            <p>Designed and Developed by Nina DeLucia</p>
+            <p>Copyright {date.getFullYear()}. <br></br>Designed and Developed by Nina DeLucia</p>
+            <a href="https://github.com/delucianina/" >GITHUB PROFILE LINK</a>
         </footer>
     )
 }

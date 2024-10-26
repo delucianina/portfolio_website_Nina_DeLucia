@@ -25,6 +25,17 @@ body {
     text-align: center;
 }
 
+.display-flex {
+    display: flex;
+    margin: 35px 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-buffer {
+    padding-top: 60px;
+}
+
 
 
 // HEADER 
@@ -68,14 +79,23 @@ header {
 // Hero Section 
 section.hero {
     display: flex;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 400px;
+    margin: 0 20px;
+    // div.image {
+    //     background-image: url('/images/squirrel_6.jpg');
+    //     background-size: cover;
+    //     background-position: top;
+    //     min-height: 350px;
+    //     min-width: 350px;
+    //     border-radius: 50%;
+    // }
     div.image {
-        background-image: url('/images/squirrel_6.jpg');
+        background-image: url('/images/code_8.png');
         background-size: cover;
         background-position: top;
-        min-height: 350px;
-        min-width: 350px;
-        border-radius: 50%;
+        width: 100%;
+        height: 100%;
     }
 
     div.hero-text {
@@ -84,11 +104,13 @@ section.hero {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-width: 50%;
+        width: 100%;
+        // min-height: 300px;
         h4 {
-            font-size: 2.5rem;
-            text-align: center;
-            padding-bottom: 20px;
+            font-size: 3.5rem;
+            // text-align: center;
+            padding-top: 100px;
+            padding-left: 15%;
         }
         p {
             font-weight: 300;
@@ -96,9 +118,24 @@ section.hero {
     }
 }
 
+// ABOUT ME
+
+section.bio {
+    .bio-text {
+        min-width: 180px;
+    }
+}
+
+#profile-picture {
+    width: 200px;
+    height: 200px;
+    margin-left: 15%;
+}
+
+
 //WORK SECTION
 main {
-    padding: 15px 0;
+    padding: 0;
     color: #fff;
     flex: 1; 
 
@@ -106,6 +143,10 @@ main {
         margin: 50px auto 30px;
         border-bottom: 1px solid #444;
         padding-bottom: 10px;
+    }
+
+    #work {
+        margin: 0 10% 150px;
     }
 
     section.work-output {
@@ -125,6 +166,10 @@ main {
                 font-size: .8rem;
             }
         }
+    }
+    a {
+        color: #b7c2ff;
+        font-weight: bold;
     }
 }
 
@@ -183,4 +228,7 @@ footer {
     padding: 35px 5%;
     background: #59718a49;
     color: #ffffffb4;
+    a {
+        color: rgb(174, 214, 252);
+    }
 }
